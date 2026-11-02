@@ -2,6 +2,10 @@
 
 Each version's changes, newest first.
 
+## 1.3.2 (2026-11-02)
+
+- Plugin Hub feedback: RuneLite's AudioPlayer, and one plugin per pull request
+
 ## 1.3.1 (2026-11-02)
 
 - Plugin Hub: build=standard in each plugin's runelite-plugin.properties
