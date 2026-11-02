@@ -127,6 +127,46 @@ class PlannerCalculator {
     @Subscribe
     public void onStatChanged(StatChanged event) {
         dirty = true;
+        // The skill you're training: the last to gain XP (not the login's report of every skill)
+        Integer before = seenXp.put(event.getSkill(), event.getXp());
+        if (before != null && event.getXp() > before) {
+            lastTrained = event.getSkill();
+        }
+    }
+
+    private final Map<Skill, Integer> seenXp = new EnumMap<>(Skill.class);
+    private volatile Skill lastTrained;
+
+    /** The skill whose open plan is pinned to the game screen (the plan overlay), or null: it follows your training. */
+    Skill pinnedPlanSkill() {
+        String saved = canPlan() ? configManager.getRSProfileConfiguration(GROUP, "plannerPinnedPlan") : null;
+        for (Skill skill : Skill.values()) {
+            if (skill.name().equals(saved)) {
+                return skill;
+            }
+        }
+        return null;
+    }
+
+    void setPinnedPlanSkill(Skill skill) {
+        if (!canPlan()) {
+            return;
+        }
+        if (skill == null) {
+            configManager.unsetRSProfileConfiguration(GROUP, "plannerPinnedPlan");
+        } else {
+            configManager.setRSProfileConfiguration(GROUP, "plannerPinnedPlan", skill.name());
+        }
+    }
+
+    /** The skill you last gained XP in (this session), or null. */
+    Skill lastTrained() {
+        return lastTrained;
+    }
+
+    /** For the preview: the skill being trained. */
+    void setSampleTrained(Skill skill) {
+        lastTrained = skill;
     }
 
     @Subscribe
