@@ -2,6 +2,10 @@
 
 Each version's changes, newest first.
 
+## 1.3.1 (2026-11-02)
+
+- Plugin Hub: build=standard in each plugin's runelite-plugin.properties
+
 ## 1.3.0 (2026-11-02)
 
 - Planner: weeklies are your own too; preset tasks and pictures when adding
