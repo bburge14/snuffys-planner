@@ -2,6 +2,12 @@
 
 Each version's changes, newest first.
 
+## 1.4.0 (2026-11-03)
+
+- Planner: Add to plan uses the Current and Target levels you typed (no dialog). Launcher: a startup error shows in a message and a log instead of the window just not opening
+- Planner plans: fit a milestone inside another (right-click > Insert a milestone in it, or Add to plan asks for levels when the plan is full), click a gap to fill it, and shortening a milestone leaves a gap instead of stretching its neighbour
+- Planner plans: milestones show progress (bar, % and actions done) and tick off as Done when passed, with a game chat message naming the next one and one at the goal
+
 ## 1.3.2 (2026-11-02)
 
 - Plugin Hub feedback: RuneLite's AudioPlayer, and one plugin per pull request
