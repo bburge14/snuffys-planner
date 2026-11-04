@@ -2,6 +2,12 @@
 
 Each version's changes, newest first.
 
+## 1.11.0 (2026-11-04)
+
+- Settings: names and choices fit the sidebar (shorter labels and names, saved keys unchanged), and the settings test now lays out each plugin's panel at the sidebar's width and fails on anything cut short
+- Planner: supply milestones follow on from each other (each starts where the one before ends, or at its own level) instead of overlapping, each running as far as its supplies take you
+- Planner: dropping logs, ore or fish (powerlevel) counts about 20% quicker at the normal pace (no bank trips), said on the milestone
+
 ## 1.10.0 (2026-11-03)
 
 - Planner: drop them (powerlevel) as a way to count products, in Sell Products By and each milestone's Sell by: worth nothing, the milestone says so
