@@ -2,6 +2,12 @@
 
 Each version's changes, newest first.
 
+## 1.10.0 (2026-11-03)
+
+- Planner: drop them (powerlevel) as a way to count products, in Sell Products By and each milestone's Sell by: worth nothing, the milestone says so
+- Planner: a supply milestone is its supplies: it shows what's left to get (Get 1.6K for Firemaking) and ends wherever getting them takes your level (~56), moving the milestones after it; the tracker's copy follows
+- Planner: supply lines say it plainly (Firemaking needs 1.6K / +818 after lvl 54) and fit the card
+
 ## 1.9.0 (2026-11-03)
 
 - Tracker and Planner: Follow per skill (your plan, your pick for a one-off, the wiki, or the usual order) on both goal cards, the others kept to switch back; sending a plan follows it, a pick follows the pick. Supply milestones go by what the other plan still needs: passed another way they stay open (Levels done, supplies to get), and say how many are for the other plan and how many for their levels
