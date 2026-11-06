@@ -2,6 +2,10 @@
 
 Each version's changes, newest first.
 
+## 1.15.0 (2026-11-06)
+
+- Planner: Materials needed lists the tools first (Tinderbox, then the logs)
+
 ## 1.14.0 (2026-11-05)
 
 - Skilling Helper: the Where line shows one place, no (+47 more): where you've been training it when that's one of its places (noticed as you gain XP there, by the wiki's map areas for each place, now in locations.json; kept until you train that skill somewhere else), else the best one
